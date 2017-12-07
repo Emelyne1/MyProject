@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<!-- link to google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow+Semi+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+	<!-- Link to stylesheet CSS -->
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<!-- Link to Grid-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
+	<title>{{page.title}}</title>
+	<!-- Link to viewport meta tag - need this to make site read responsive styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link to my font awesome icons-->
+	<script src="https://use.fontawesome.com/aa9372b038.js"></script>
+</head>
+<body>
+	<header id="home" grid>
+<!-- mobile navigation starts here-->
+	<div id="container" class="grid mob-show">
+    <div class="col-6_sn_12">
+     
+    </div>
+    <div class="col-6_sn_12">
+      <nav>
+        <a href="#home" title="Home" class="toggle-mobile-menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+  <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate">
+      <a class="col-12 center toggle-mobile-menu" href="#home">
+        <i class="fa fa-times" aria-hidden="true"></i>    
+      </a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+      <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+  </nav>
+  
+</div> <!-- #container -->
+
+<!-- mobile navigation ends here-->
+
+	<nav class="grid-spaceBetween mob-hide">
+	  <div class="col-2">
+		<img src="images/logo.jpg" alt="logo photo" id="logo">
+		</div>,
+		<div class="col-5">
+		    <a href="#home">Home</a>
+			<a href="#about-us">About</a>
+			<a href="#products">Our products</a>
+			<a href="#contact">Contact Me</a>
+		</div>
+	</nav>
+	<h1> Smart Approaches in ICT for Rwanda</h1>
+</header>
+{{content}}
+<footer id="contact" class="grid-center">
+		<h2>Contact Us</h2>
+		<form class="grid-center" method="POST" action="http://fromspree.io/emelyneruhigira@gmail.com">
+			<label class="col-7">Name</label>
+			<input type="name" class="col-7">
+			<label class="col-7">Email</label>
+			<input type="email" class="col-7">
+			<label class="col-7">Message</label>
+		    <textarea type="message" class="col-7 textarea"></textarea>
+		    <label class="col-12"></label>
+		    <button type="submit" class="button col-7">send</button>
+		</form>
+		<nav class="grid-center">
+		    <a class="col-1" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-google-plus" aria-hidden="true" id="google"></i></a>
+			<a class="col-1" href="https://www.facebook.com/ruhigira.emelyne.1"> <i class="fa fa-facebook-square" aria-hidden="true" id="facebook"></i></a>
+			<a class="col-1" href="https://www.instagram.com/emelyne2014/?hl=en"> <i class="fa fa-instagram" aria-hidden="true" id="instagram"></i></a>
+			<a class="col-1" href="https://mail.google.com/mail/u/0/#inbox"> <i class="fa fa-envelope-o" aria-hidden="true" id="email"></i></a>
+		</nav>
+	 </footer>
+	 <!-- link to JQuery Library-->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <!-- Link to My JavaScript-->
+	 <script src="/javascript/script.js"></script>
+
+	</body>
+</html>
